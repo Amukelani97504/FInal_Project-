@@ -29,7 +29,7 @@ const PitchDeck = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-subtle p-6 rounded-xl">
+            <div className="bg-gradient-to-br from-card to-muted p-6 rounded-xl border">
               <Target className="w-12 h-12 text-primary mb-4" />
               <h4 className="font-semibold mb-2">UN SDG 6</h4>
               <p className="text-sm text-muted-foreground">
@@ -257,8 +257,8 @@ const PitchDeck = () => {
 
         <div className="space-y-20">
           {slides.map((slide, index) => (
-            <Card key={slide.id} className="shadow-large border-0 overflow-hidden">
-              <CardHeader className="bg-gradient-subtle text-center py-12">
+            <Card key={slide.id} className="shadow-xl border overflow-hidden">
+              <CardHeader className="bg-gradient-to-br from-primary/5 to-accent/5 text-center py-12">
                 <div className="flex items-center justify-center gap-4 mb-4">
                   <Badge variant="secondary">{String(index + 1).padStart(2, '0')}</Badge>
                   <ArrowRight className="w-4 h-4 text-muted-foreground" />
