@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import PitchDeck from "@/components/PitchDeck";
 import SDGSection from "@/components/SDGSection";
 import AIApproach from "@/components/AIApproach";
 import Dashboard from "@/components/Dashboard";
@@ -12,6 +13,9 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
+      <section id="pitch">
+        <PitchDeck />
+      </section>
       <section id="sdg">
         <SDGSection />
       </section>
