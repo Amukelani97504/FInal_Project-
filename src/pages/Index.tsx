@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import SDGSection from "@/components/SDGSection";
+import AIApproach from "@/components/AIApproach";
+import Dashboard from "@/components/Dashboard";
+import EthicsSection from "@/components/EthicsSection";
+import ProjectDeliverables from "@/components/ProjectDeliverables";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navigation />
+      <Hero />
+      <section id="sdg">
+        <SDGSection />
+      </section>
+      <section id="approach">
+        <AIApproach />
+      </section>
+      <section id="dashboard">
+        <Dashboard />
+      </section>
+      <section id="ethics">
+        <EthicsSection />
+      </section>
+      <section id="deliverables">
+        <ProjectDeliverables />
+      </section>
+      <Footer />
     </div>
   );
 };
